@@ -1,5 +1,24 @@
+import random
+#single player roulette game
+
+board = []
+
+#set up scoring data here/list of all possible bet spots which can be printed out later
+
+
+chips = int(20)
+currentSpot = int()
+
 def main():
-  print("Hello, World!")
+  while chips > 0:
+    #ask for bet/number of chips
+
+    
+    currentSpot = random.randint(0,36) #36 is actually 00
+    print(f"Spot landed on is {currentSpot}, you [enter win or lose here and amount]")
+
+    #deal with adding or removing chips here
+
 
 if __name__ == "__main__":
   main()
